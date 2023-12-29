@@ -7,6 +7,8 @@ import { CgMoreO } from "react-icons/cg";
 import { Link as RouterLink } from "react-router-dom";
 
 function UserHeader() {
+  const toast = useToast();
+
   const copyURL = () => {
     const currentURL = window.location.href;
     navigator.clipboard.writeText(currentURL).then(() => {
