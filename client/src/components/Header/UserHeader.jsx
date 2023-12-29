@@ -7,6 +7,19 @@ import { CgMoreO } from "react-icons/cg";
 import { Link as RouterLink } from "react-router-dom";
 
 function UserHeader() {
+  const copyURL = () => {
+    const currentURL = window.location.href;
+    navigator.clipboard.writeText(currentURL).then(() => {
+      toast({
+        title: "Success.",
+        status: "success",
+        description: "Profile link copied.",
+        duration: 3000,
+        isClosable: true,
+      });
+    });
+  };
+
   return (
     <VStack gap={4} alignItems={"start"}>
       <Flex justifyContent={"space-between"} w={"full"}>
@@ -41,8 +54,8 @@ function UserHeader() {
         <Link as={RouterLink} to="/update">
           <Button size={"sm"}>Edit Profile</Button>
         </Link>
+        {/* <Button size={"sm"}>"Follow"</Button> */}
       </Flex>
-      {/* <Button size={"sm"}>"Follow"</Button> */}
 
       <Flex w={"full"} justifyContent={"space-between"}>
         <Flex gap={2} alignItems={"center"}>
@@ -56,10 +69,7 @@ function UserHeader() {
               </MenuButton>
               <Portal>
                 <MenuList bg={"gray.dark"}>
-                  <MenuItem
-                    bg={"gray.dark"}
-                    //   onClick={copyURL}
-                  >
+                  <MenuItem bg={"gray.dark"} onClick={copyURL}>
                     Copy link
                   </MenuItem>
                 </MenuList>
