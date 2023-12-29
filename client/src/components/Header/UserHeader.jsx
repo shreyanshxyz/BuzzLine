@@ -4,13 +4,14 @@ import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/menu";
 import { Portal } from "@chakra-ui/portal";
 import { Button, useToast } from "@chakra-ui/react";
 import { CgMoreO } from "react-icons/cg";
+import { Link as RouterLink } from "react-router-dom";
 
 function UserHeader() {
   return (
     <VStack gap={4} alignItems={"start"}>
       <Flex justifyContent={"space-between"} w={"full"}>
         <Box>
-          <Text fontSize={"2xl"} fontWeight={"bold"}>
+          <Text fontSize={"2xl"} mb={2} fontWeight={"bold"}>
             Shreyansh Bhadoria
           </Text>
           <Flex gap={2} alignItems={"center"}>
@@ -19,6 +20,75 @@ function UserHeader() {
             </Text>
           </Flex>
         </Box>
+        <Box>
+          <Avatar
+            name={"shreyanshxyz"}
+            src="/gojo_icon.jpg"
+            size={{
+              base: "lg",
+              md: "xl",
+            }}
+          />
+        </Box>
+      </Flex>
+      <Flex
+        gap={2}
+        alignItems={"center"}
+        w={"full"}
+        justifyContent={"space-between"}
+      >
+        <Text>Student of Life</Text>
+        <Link as={RouterLink} to="/update">
+          <Button size={"sm"}>Edit Profile</Button>
+        </Link>
+      </Flex>
+      {/* <Button size={"sm"}>"Follow"</Button> */}
+
+      <Flex w={"full"} justifyContent={"space-between"}>
+        <Flex gap={2} alignItems={"center"}>
+          <Text color={"gray.light"}>899 followers</Text>
+        </Flex>
+        <Flex>
+          <Box className="icon-container">
+            <Menu>
+              <MenuButton>
+                <CgMoreO size={24} cursor={"pointer"} />
+              </MenuButton>
+              <Portal>
+                <MenuList bg={"gray.dark"}>
+                  <MenuItem
+                    bg={"gray.dark"}
+                    //   onClick={copyURL}
+                  >
+                    Copy link
+                  </MenuItem>
+                </MenuList>
+              </Portal>
+            </Menu>
+          </Box>
+        </Flex>
+      </Flex>
+
+      <Flex w={"full"}>
+        <Flex
+          flex={1}
+          borderBottom={"1.5px solid white"}
+          justifyContent={"center"}
+          pb="3"
+          cursor={"pointer"}
+        >
+          <Text fontWeight={"bold"}> Posts</Text>
+        </Flex>
+        <Flex
+          flex={1}
+          borderBottom={"1px solid gray"}
+          justifyContent={"center"}
+          color={"gray.light"}
+          pb="3"
+          cursor={"pointer"}
+        >
+          <Text fontWeight={"bold"}> Comments</Text>
+        </Flex>
       </Flex>
     </VStack>
   );
