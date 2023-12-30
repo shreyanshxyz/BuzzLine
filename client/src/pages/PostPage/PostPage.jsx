@@ -13,6 +13,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { formatDistanceToNow } from "date-fns";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { DeleteIcon } from "@chakra-ui/icons";
+import Actions from "../../components/Actions/Actions";
+import Comment from "../../components/Comments/Comment";
 
 function PostPage() {
   return (
@@ -65,9 +67,11 @@ function PostPage() {
       </Box>
       {/* )} */}
 
-      {/* <Flex gap={3} my={3}>
-        <Actions post={currentPost} />
-      </Flex> */}
+      <Flex gap={3} my={3}>
+        <Actions
+        // post={currentPost}
+        />
+      </Flex>
 
       <Divider my={4} />
 
@@ -79,7 +83,7 @@ function PostPage() {
         <Button>Get</Button>
       </Flex> */}
 
-      <Divider my={4} />
+      <Divider bg={"gray"} my={4} />
       {/* {currentPost.replies.map((reply) => (
         <Comment
           key={reply._id}
@@ -90,6 +94,10 @@ function PostPage() {
           }
         />
       ))} */}
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
     </>
   );
 }
