@@ -60,7 +60,6 @@ function UserPost({ postImg, postTitle, likes, replies }) {
                   name="Shreyansh Alt"
                   src="https://i.pinimg.com/736x/d2/5d/5c/d25d5c9774eece45fc37b18faf3fdeed.jpg"
                   bottom={0}
-                  // left={"0px"}
                   // padding={"2px"}
                 />
                 <Avatar
