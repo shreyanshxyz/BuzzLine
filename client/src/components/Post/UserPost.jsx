@@ -100,10 +100,19 @@ function UserPost({ postImg, postTitle, likes, replies }) {
                 <Avatar
                   size={"xs"}
                   name="Shreyansh Alt"
-                  src="https://i.pinimg.com/736x/57/f7/83/57f783c03de47fd2b3ae794612eb0353.jpg"
+                  src="https://i.pinimg.com/564x/57/ef/d5/57efd59416212ad21a293692dd470570.jpg"
                   // position={"absolute"}
                   bottom={0}
                   // right={"-7px"}
+                  // padding={"2px"}
+                />
+                <Avatar
+                  size={"xs"}
+                  name="Shreyansh Alt"
+                  src="https://i.pinimg.com/736x/57/f7/83/57f783c03de47fd2b3ae794612eb0353.jpg"
+                  // position={"absolute"}
+                  bottom={0}
+                  // left={"15px"}
                   // padding={"2px"}
                 />
                 <Avatar
