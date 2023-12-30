@@ -12,8 +12,8 @@ import { RecoilRoot } from "recoil";
 const styles = {
   global: (props) => ({
     body: {
-      color: mode("gray.800", "whiteAlpha.900")(props),
-      bg: mode("gray.100", "#101010")(props),
+      color: mode("white.800", "#1e1e1e")(props),
+      bg: mode("white.100", "#ffffff")(props),
     },
   }),
 };
@@ -25,8 +25,8 @@ const config = {
 
 const colors = {
   gray: {
-    light: "#616161",
-    dark: "#1e1e1e",
+    light: "#1e1e1e",
+    dark: "#ffffff",
   },
 };
 
