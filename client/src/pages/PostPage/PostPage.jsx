@@ -19,7 +19,12 @@ function PostPage() {
     <>
       <Flex>
         <Flex w={"full"} alignItems={"center"} gap={3}>
-          <Avatar src={"/gojo_icon.jpg"} size={"md"} name="Mark Zuckerberg" />
+          <Avatar
+            src={"/gojo_icon.jpg"}
+            size={"md"}
+            borderRadius={"2px"}
+            name="Shreyansh Bhadoria"
+          />
           <Flex>
             <Text fontSize={"sm"} fontWeight={"bold"}>
               shreyanshxyz
