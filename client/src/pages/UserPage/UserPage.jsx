@@ -7,8 +7,8 @@ function UserPage() {
     <>
       <UserHeader />
       <UserPost
-        likes={1200}
-        replies={481}
+        likes={3002}
+        replies={866}
         postImg={"./havertz.jpg"}
         postTitle={"Kai Havertz"}
       />
@@ -19,12 +19,12 @@ function UserPage() {
         postTitle={"Did you know?"}
       />
       <UserPost
-        likes={1200}
-        replies={481}
+        likes={1341}
+        replies={391}
         postImg={"./havertz.jpg"}
         postTitle={"Heluuuu"}
       />
-      <UserPost likes={1200} replies={481} postTitle={"Heluuuu"} />
+      <UserPost likes={862} replies={123} postTitle={"Heluuuu"} />
     </>
   );
 }
