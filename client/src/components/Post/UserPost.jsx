@@ -76,7 +76,6 @@ function UserPost({ postImg, postTitle, likes, replies }) {
                   name="Shreyansh Alt"
                   src="https://i.pinimg.com/736x/57/f7/83/57f783c03de47fd2b3ae794612eb0353.jpg"
                   bottom={0}
-                  // left={"15px"}
                   // padding={"2px"}
                 />
                 <Avatar
@@ -84,7 +83,6 @@ function UserPost({ postImg, postTitle, likes, replies }) {
                   name="Shreyansh Alt"
                   src="https://i.pinimg.com/736x/8b/87/dc/8b87dcf0245c75448a08dda8fc5997fb.jpg"
                   bottom={0}
-                  // left={"15px"}
                   // padding={"2px"}
                 />
               </AvatarGroup>
