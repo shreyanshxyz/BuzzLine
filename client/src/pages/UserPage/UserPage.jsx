@@ -21,8 +21,8 @@ function UserPage() {
       <UserPost
         likes={1341}
         replies={391}
-        postImg={"./havertz.jpg"}
-        postTitle={"Heluuuu"}
+        postImg={"./aurora.jpg"}
+        postTitle={"Northern Lights - Norway"}
       />
       <UserPost likes={862} replies={123} postTitle={"Heluuuu"} />
     </>
