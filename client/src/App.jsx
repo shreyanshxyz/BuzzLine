@@ -4,6 +4,7 @@ import { Container } from "@chakra-ui/react";
 import HomePage from "./pages/HomePage/HomePage";
 import UserPage from "./pages/UserPage/UserPage";
 import PostPage from "./pages/PostPage/PostPage";
+import AuthPage from "./pages/AuthPage/AuthPage";
 import Header from "./components/Header/Header";
 
 const user = true;
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/auth" element={<AuthPage />} />
         <Route
           path="/:username"
           element={
