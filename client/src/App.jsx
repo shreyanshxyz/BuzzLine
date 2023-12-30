@@ -8,7 +8,7 @@ import Header from "./components/Header/Header";
 const user = true;
 function App() {
   return (
-    <Container maxW="720px">
+    <Container maxW="740px">
       <Header />
       <Routes>
         <Route
