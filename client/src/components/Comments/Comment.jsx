@@ -27,7 +27,7 @@ const Comment = ({ userProfilePic, username, text, lastReply }) => {
           </Text>
         </Flex>
       </Flex>
-      {!lastReply ? <Divider /> : null}
+      {!lastReply ? <Divider bg={"black"} /> : null}
     </>
   );
 };
