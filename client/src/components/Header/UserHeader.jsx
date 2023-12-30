@@ -37,6 +37,7 @@ function UserHeader() {
         </Box>
         <Box>
           <Avatar
+            borderRadius={"2px"}
             name={"shreyanshxyz"}
             src="/gojo_icon.jpg"
             size={{
