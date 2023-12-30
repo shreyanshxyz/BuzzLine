@@ -23,9 +23,6 @@ function Header() {
   const logout = useLogout();
   const setAuthScreen = useSetRecoilState(authScreenAtom);
   return (
-    // <Flex justifyContent={"center"} marginTop={6} marginBottom={12}>
-    //   <Text cursor={"pointer"} w={20}>
-    //     BuzzLine
     <Flex justifyContent={"space-between"} mt={6} mb="12">
       {user && (
         <Link as={RouterLink} to="/">
