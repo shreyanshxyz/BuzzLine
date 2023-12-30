@@ -10,39 +10,6 @@ function UserPost({ postImg, postTitle, likes, replies }) {
   return (
     <Link to={"/user/post/1"}>
       <Flex gap={3} mb={4} py={5}>
-        {/* <Flex flexDirection={"column"} alignItems={"center"}> */}
-        {/* <Avatar size={"md"} name="Shreyansh Bhadoria" src="/gojo_icon.jpg" /> */}
-        {/* <Box w={"1px"} h={"full"} bg={"gray.light"} my={2} /> */}
-        {/* <Box position={"relative"} w={"full"}>
-            <Avatar
-              size={"xs"}
-              name="Shreyansh Alt"
-              src="https://i.pinimg.com/736x/d2/5d/5c/d25d5c9774eece45fc37b18faf3fdeed.jpg"
-              position={"absolute"}
-              bottom={0}
-              left={"0px"}
-              padding={"2px"}
-            />
-            <Avatar
-              size={"xs"}
-              name="Shreyansh Alt"
-              src="https://i.pinimg.com/736x/57/f7/83/57f783c03de47fd2b3ae794612eb0353.jpg"
-              position={"absolute"}
-              bottom={0}
-              right={"-7px"}
-              padding={"2px"}
-            />
-            <Avatar
-              size={"xs"}
-              name="Shreyansh Alt"
-              src="https://i.pinimg.com/736x/8b/87/dc/8b87dcf0245c75448a08dda8fc5997fb.jpg"
-              position={"absolute"}
-              bottom={0}
-              left={"15px"}
-              padding={"2px"}
-            />
-          </Box> */}
-        {/* </Flex> */}
         <Flex flex={1} flexDirection={"column"} gap={2}>
           <Flex justifyContent={"space-between"} w={"full"}>
             <Flex w={"full"} alignItems={"center"}>
