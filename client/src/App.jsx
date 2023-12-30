@@ -6,15 +6,22 @@ import UserPage from "./pages/UserPage/UserPage";
 import PostPage from "./pages/PostPage/PostPage";
 import AuthPage from "./pages/AuthPage/AuthPage";
 import Header from "./components/Header/Header";
-
-const user = true;
+import { useRecoilValue } from "recoil";
+import userAtom from "./atoms/userAtom";
 function App() {
+  const user = useRecoilValue(userAtom);
   return (
     <Container maxW="740px">
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/auth" element={<AuthPage />} />
+        <Route
+          path="/"
+          element={user ? <HomePage /> : <Navigate to="/auth" />}
+        />
+        <Route
+          path="/auth"
+          element={!user ? <AuthPage /> : <Navigate to="/" />}
+        />
         <Route
           path="/:username"
           element={
