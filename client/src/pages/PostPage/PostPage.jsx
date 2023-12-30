@@ -94,10 +94,24 @@ function PostPage() {
           }
         />
       ))} */}
-      <Comment />
-      <Comment />
-      <Comment />
-      <Comment />
+      <Comment
+        userProfilePic={"/gojo_icon.jpg"}
+        username={"shreyanshx"}
+        text={"Nice Man!"}
+        lastReply={false}
+      />
+      <Comment
+        userProfilePic={"/gojo_icon.jpg"}
+        username={"shreyanshxy"}
+        text={"Nice One Man!"}
+        lastReply={false}
+      />
+      <Comment
+        userProfilePic={"/gojo_icon.jpg"}
+        username={"shreyanshxyy"}
+        text={"Nice Two Man!"}
+        lastReply={true}
+      />
     </>
   );
 }
