@@ -14,7 +14,8 @@ function UserPost({ postImg, postTitle, likes, replies }) {
           <Flex justifyContent={"space-between"} w={"full"}>
             <Flex w={"full"} alignItems={"center"}>
               <Avatar
-                paddingRight={"10px"}
+                borderRadius={"2px"}
+                marginRight={"10px"}
                 size={"md"}
                 name="Shreyansh Bhadoria"
                 src="/gojo_icon.jpg"
