@@ -108,6 +108,3 @@ function UserPost({ postImg, postTitle, likes, replies }) {
 }
 
 export default UserPost;
-{
-  /* <Image src="/havertz.jpg" w={4} h={4} ml={1} /> */
-}
