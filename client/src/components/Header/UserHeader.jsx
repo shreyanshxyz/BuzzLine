@@ -30,8 +30,8 @@ function UserHeader() {
             Shreyansh Bhadoria
           </Text>
           <Flex gap={2} alignItems={"center"}>
-            <Text fontSize={"sm"} bg={"gray.dark"} p={2} borderRadius={"full"}>
-              shreyanshxyz
+            <Text fontSize={"sm"} bg={"gray.200"} p={2} borderRadius={"full"}>
+              @shreyanshxyz
             </Text>
           </Flex>
         </Box>
@@ -54,14 +54,25 @@ function UserHeader() {
       >
         <Text>Student of Life</Text>
         <Link as={RouterLink} to="/update">
-          <Button size={"sm"}>Edit Profile</Button>
+          <Button
+            size={"sm"}
+            bg={"blue.700"}
+            _hover={{
+              color: "blue.700",
+              background: "white",
+            }}
+          >
+            Edit Profile
+          </Button>
         </Link>
         {/* <Button size={"sm"}>"Follow"</Button> */}
       </Flex>
 
       <Flex w={"full"} justifyContent={"space-between"}>
         <Flex gap={2} alignItems={"center"}>
-          <Text color={"gray.light"}>899 followers</Text>
+          <Text color={"gray.light"} fontWeight={"bold"}>
+            899 followers
+          </Text>
         </Flex>
         <Flex>
           <Box className="icon-container">
