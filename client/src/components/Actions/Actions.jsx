@@ -168,31 +168,47 @@ const Actions = ({ post }) => {
           alignItems={"center"}
           justifyContent={"center"}
         >
+          {post.replies.length === 0 && (
+            <Text size={"xs"} alignItems={"center"} textAlign={"center"}>
+              🥱
+            </Text>
+          )}
           <AvatarGroup size="2xs" color={"black"} spacing={"1px"} max={2}>
-            <Avatar
-              size={"xs"}
-              name="Shreyansh Alt"
-              src="https://i.pinimg.com/736x/d2/5d/5c/d25d5c9774eece45fc37b18faf3fdeed.jpg"
-              bottom={0}
-            />
-            <Avatar
-              size={"xs"}
-              name="Shreyansh Alt"
-              src="https://i.pinimg.com/564x/57/ef/d5/57efd59416212ad21a293692dd470570.jpg"
-              bottom={0}
-            />
-            <Avatar
-              size={"xs"}
-              name="Shreyansh Alt"
-              src="https://i.pinimg.com/736x/57/f7/83/57f783c03de47fd2b3ae794612eb0353.jpg"
-              bottom={0}
-            />
-            <Avatar
-              size={"xs"}
-              name="Shreyansh Alt"
-              src="https://i.pinimg.com/736x/8b/87/dc/8b87dcf0245c75448a08dda8fc5997fb.jpg"
-              bottom={0}
-            />
+            {post.replies[0] && (
+              <Avatar
+                size="xs"
+                name="John doe"
+                src={post.replies[0].userProfilePic}
+                position={"absolute"}
+                top={"0px"}
+                left="15px"
+                padding={"2px"}
+              />
+            )}
+
+            {post.replies[1] && (
+              <Avatar
+                size="xs"
+                name="John doe"
+                src={post.replies[1].userProfilePic}
+                position={"absolute"}
+                bottom={"0px"}
+                right="-5px"
+                padding={"2px"}
+              />
+            )}
+
+            {post.replies[2] && (
+              <Avatar
+                size="xs"
+                name="John doe"
+                src={post.replies[2].userProfilePic}
+                position={"absolute"}
+                bottom={"0px"}
+                left="4px"
+                padding={"2px"}
+              />
+            )}
           </AvatarGroup>
         </Box>
         <Flex gap={2} alignItems={"center"}>
