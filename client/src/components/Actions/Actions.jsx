@@ -168,7 +168,7 @@ const Actions = ({ post }) => {
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <AvatarGroup size="2xs" max={2}>
+          <AvatarGroup size="2xs" color={"black"} spacing={"1px"} max={2}>
             <Avatar
               size={"xs"}
               name="Shreyansh Alt"
