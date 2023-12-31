@@ -1,11 +1,4 @@
-import {
-  Button,
-  Flex,
-  Image,
-  Link,
-  useColorMode,
-  Text,
-} from "@chakra-ui/react";
+import { Button, Flex, Link, useColorMode, Text } from "@chakra-ui/react";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import userAtom from "../../atoms/userAtom";
 import { AiFillHome } from "react-icons/ai";
