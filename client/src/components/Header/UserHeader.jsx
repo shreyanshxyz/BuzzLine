@@ -55,10 +55,11 @@ const UserHeader = ({ user }) => {
           )}
           {!user.profilePic && (
             <Avatar
+              borderRadius={"2px"}
               name={user.name}
               src="https://bit.ly/broken-link"
               size={{
-                base: "md",
+                base: "lg",
                 md: "xl",
               }}
             />
