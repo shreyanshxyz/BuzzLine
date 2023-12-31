@@ -131,7 +131,7 @@ const UserHeader = ({ user }) => {
       <Flex w={"full"}>
         <Flex
           flex={1}
-          borderBottom={"1.5px solid white"}
+          borderBottom={"1.5px solid gray"}
           justifyContent={"center"}
           pb="3"
           cursor={"pointer"}
@@ -140,7 +140,7 @@ const UserHeader = ({ user }) => {
         </Flex>
         <Flex
           flex={1}
-          borderBottom={"1px solid gray"}
+          // borderBottom={"1px solid gray"}
           justifyContent={"center"}
           color={"gray.light"}
           pb="3"
