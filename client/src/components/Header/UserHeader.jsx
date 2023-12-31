@@ -88,23 +88,29 @@ const UserHeader = ({ user }) => {
             </Button>
           </Link>
         )}
+        {currentUser?._id !== user._id && (
+          <Button
+            size={"sm"}
+            bg={"blue.700"}
+            _hover={{
+              color: "blue.700",
+              background: "white",
+            }}
+            onClick={handleFollowUnfollow}
+            isLoading={updating}
+          >
+            {following ? "Unfollow" : "Follow"}
+          </Button>
+        )}
       </Flex>
 
-      {currentUser?._id !== user._id && (
-        <Button size={"sm"} onClick={handleFollowUnfollow} isLoading={updating}>
-          {following ? "Unfollow" : "Follow"}
-        </Button>
-      )}
       <Flex w={"full"} justifyContent={"space-between"}>
         <Flex gap={2} alignItems={"center"}>
-          <Text color={"gray.light"}>{user.followers.length} followers</Text>
-          <Box w="1" h="1" bg={"gray.light"} borderRadius={"full"}></Box>
-          <Link color={"gray.light"}>instagram.com</Link>
+          <Text color={"gray.light"} fontWeight={"bold"}>
+            {user.followers.length} followers
+          </Text>
         </Flex>
         <Flex>
-          <Box className="icon-container">
-            <BsInstagram size={24} cursor={"pointer"} />
-          </Box>
           <Box className="icon-container">
             <Menu>
               <MenuButton>
