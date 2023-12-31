@@ -15,8 +15,14 @@ function Header() {
   return (
     <Flex justifyContent={"space-between"} mt={6} mb="12">
       {user && (
-        <Link as={RouterLink} to="/">
-          <Text cursor={"pointer"} w={20}>
+        <Link style={{ textDecoration: "none" }} as={RouterLink} to="/">
+          <Text
+            fontFamily={"inter"}
+            fontStyle={"italic"}
+            fontWeight={"bold"}
+            cursor={"pointer"}
+            w={20}
+          >
             BuzzLine
           </Text>
         </Link>
