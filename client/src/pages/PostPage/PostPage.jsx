@@ -89,7 +89,11 @@ const PostPage = () => {
             name={user.username}
           />
           <Flex>
-            <Text fontSize={"sm"} fontWeight={"bold"}>
+            <Text
+              onClick={() => navigate(`/${user.username}`)}
+              fontSize={"sm"}
+              fontWeight={"bold"}
+            >
               {user.username}
             </Text>
           </Flex>
