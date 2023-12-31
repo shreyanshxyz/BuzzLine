@@ -161,7 +161,7 @@ const Actions = ({ post }) => {
         <ShareSVG />
       </Flex>
 
-      <Flex gap={2} alignItems={"center"} alignContent={"center"}>
+      <Flex gap={2} alignItems={"center"}>
         <Box
           position={"relative"}
           w={"fit-content"}
@@ -179,10 +179,10 @@ const Actions = ({ post }) => {
                 size="xs"
                 name="John doe"
                 src={post.replies[0].userProfilePic}
-                position={"absolute"}
-                top={"0px"}
-                left="15px"
-                padding={"2px"}
+                // position={"absolute"}
+                // top={"0px"}
+                // left="15px"
+                // padding={"2px"}
               />
             )}
 
@@ -191,10 +191,10 @@ const Actions = ({ post }) => {
                 size="xs"
                 name="John doe"
                 src={post.replies[1].userProfilePic}
-                position={"absolute"}
-                bottom={"0px"}
-                right="-5px"
-                padding={"2px"}
+                // position={"absolute"}
+                // bottom={"0px"}
+                // right="-5px"
+                // padding={"2px"}
               />
             )}
 
@@ -203,10 +203,10 @@ const Actions = ({ post }) => {
                 size="xs"
                 name="John doe"
                 src={post.replies[2].userProfilePic}
-                position={"absolute"}
-                bottom={"0px"}
-                left="4px"
-                padding={"2px"}
+                // position={"absolute"}
+                // bottom={"0px"}
+                // left="4px"
+                // padding={"2px"}
               />
             )}
           </AvatarGroup>
