@@ -9,7 +9,6 @@ import authScreenAtom from "../../atoms/authAtom";
 import { MdOutlineSettings } from "react-icons/md";
 
 function Header() {
-  const { colorMode, toggleColorMode } = useColorMode();
   const user = useRecoilValue(userAtom);
   const logout = useLogout();
   const setAuthScreen = useSetRecoilState(authScreenAtom);
@@ -40,7 +39,7 @@ function Header() {
           <Link as={RouterLink} to={`/update`}>
             <MdOutlineSettings size={20} />
           </Link>
-          <Button size={"xs"} color={"black"} onClick={logout}>
+          <Button size={"xs"} color={"red.600"} onClick={logout}>
             <FiLogOut size={20} />
           </Button>
         </Flex>
