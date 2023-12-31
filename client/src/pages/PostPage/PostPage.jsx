@@ -82,7 +82,12 @@ const PostPage = () => {
     <>
       <Flex>
         <Flex w={"full"} alignItems={"center"} gap={3}>
-          <Avatar src={user.profilePic} size={"md"} name="Mark Zuckerberg" />
+          <Avatar
+            onClick={() => navigate(`/${user.username}`)}
+            src={user.profilePic}
+            size={"md"}
+            name={user.username}
+          />
           <Flex>
             <Text fontSize={"sm"} fontWeight={"bold"}>
               {user.username}
