@@ -83,7 +83,14 @@ export default function UpdateProfilePage() {
                 />
               </Center>
               <Center w="full">
-                <Button w="full" onClick={() => fileRef.current.click()}>
+                <Button
+                  w="full"
+                  background={"blue"}
+                  _hover={{
+                    background: "blue",
+                  }}
+                  onClick={() => fileRef.current.click()}
+                >
                   Change Avatar
                 </Button>
                 <Input
