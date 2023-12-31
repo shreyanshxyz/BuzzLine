@@ -139,6 +139,7 @@ const Actions = ({ post }) => {
         </svg>
 
         <svg
+          cursor={"pointer"}
           aria-label="Comment"
           color=""
           fill=""
