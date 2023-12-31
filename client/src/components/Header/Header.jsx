@@ -18,7 +18,9 @@ function Header() {
     <Flex justifyContent={"space-between"} mt={6} mb="12">
       {user && (
         <Link as={RouterLink} to="/">
-          <AiFillHome size={24} />
+          <Text cursor={"pointer"} w={20}>
+            BuzzLine
+          </Text>
         </Link>
       )}
       {!user && (
@@ -30,10 +32,6 @@ function Header() {
           Login
         </Link>
       )}
-
-      <Text cursor={"pointer"} w={20}>
-        BuzzLine
-      </Text>
 
       {user && (
         <Flex alignItems={"center"} gap={4}>
