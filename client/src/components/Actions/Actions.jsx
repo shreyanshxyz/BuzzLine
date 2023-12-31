@@ -1,4 +1,6 @@
 import {
+  Avatar,
+  AvatarGroup,
   Box,
   Button,
   Flex,
@@ -159,14 +161,49 @@ const Actions = ({ post }) => {
         <ShareSVG />
       </Flex>
 
-      <Flex gap={2} alignItems={"center"}>
-        <Text color={"gray.light"} fontSize="sm">
-          {post.replies.length} replies
-        </Text>
-        <Box w={0.5} h={0.5} borderRadius={"full"} bg={"gray.light"}></Box>
-        <Text color={"gray.light"} fontSize="sm">
-          {post.likes.length} likes
-        </Text>
+      <Flex>
+        <Box
+          position={"relative"}
+          w={"fit-content"}
+          alignItems={"center"}
+          justifyContent={"center"}
+        >
+          <AvatarGroup size="2px" max={2}>
+            <Avatar
+              size={"xs"}
+              name="Shreyansh Alt"
+              src="https://i.pinimg.com/736x/d2/5d/5c/d25d5c9774eece45fc37b18faf3fdeed.jpg"
+              bottom={0}
+            />
+            <Avatar
+              size={"xs"}
+              name="Shreyansh Alt"
+              src="https://i.pinimg.com/564x/57/ef/d5/57efd59416212ad21a293692dd470570.jpg"
+              bottom={0}
+            />
+            <Avatar
+              size={"xs"}
+              name="Shreyansh Alt"
+              src="https://i.pinimg.com/736x/57/f7/83/57f783c03de47fd2b3ae794612eb0353.jpg"
+              bottom={0}
+            />
+            <Avatar
+              size={"xs"}
+              name="Shreyansh Alt"
+              src="https://i.pinimg.com/736x/8b/87/dc/8b87dcf0245c75448a08dda8fc5997fb.jpg"
+              bottom={0}
+            />
+          </AvatarGroup>
+        </Box>
+        <Flex gap={2} alignItems={"center"}>
+          <Text color={"gray.light"} fontSize="sm">
+            {post.replies.length} replies
+          </Text>
+          <Box w={0.5} h={0.5} borderRadius={"full"} bg={"gray.light"}></Box>
+          <Text color={"gray.light"} fontSize="sm">
+            {post.likes.length} likes
+          </Text>
+        </Flex>
       </Flex>
 
       <Modal isOpen={isOpen} onClose={onClose}>
