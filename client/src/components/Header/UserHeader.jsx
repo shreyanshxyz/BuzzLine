@@ -136,9 +136,9 @@ const UserHeader = ({ user }) => {
           pb="3"
           cursor={"pointer"}
         >
-          <Text fontWeight={"bold"}> Threads</Text>
+          <Text fontWeight={"bold"}> Posts</Text>
         </Flex>
-        {/* <Flex
+        <Flex
           flex={1}
           borderBottom={"1px solid gray"}
           justifyContent={"center"}
@@ -146,8 +146,8 @@ const UserHeader = ({ user }) => {
           pb="3"
           cursor={"pointer"}
         >
-          <Text fontWeight={"bold"}> Replies</Text>
-        </Flex> */}
+          <Text fontWeight={"bold"}> Comments</Text>
+        </Flex>
       </Flex>
     </VStack>
   );
