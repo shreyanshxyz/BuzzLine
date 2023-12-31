@@ -9,6 +9,7 @@ import UpdateProfilePage from "./pages/UpdateProfile/UpdateProfilePage";
 import Header from "./components/Header/Header";
 import { useRecoilValue } from "recoil";
 import userAtom from "./atoms/userAtom";
+import CreatePost from "./components/Post/CreatePost";
 function App() {
   const user = useRecoilValue(userAtom);
   return (
@@ -33,7 +34,7 @@ function App() {
             user ? (
               <>
                 <UserPage />
-                {/* <CreatePost /> */}
+                <CreatePost />
               </>
             ) : (
               <UserPage />
