@@ -44,10 +44,11 @@ const UserHeader = ({ user }) => {
         <Box>
           {user.profilePic && (
             <Avatar
+              borderRadius={"2px"}
               name={user.name}
               src={user.profilePic}
               size={{
-                base: "md",
+                base: "lg",
                 md: "xl",
               }}
             />
