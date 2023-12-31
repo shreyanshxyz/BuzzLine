@@ -21,7 +21,7 @@ function UserPost({ postImg, postTitle, likes, replies }) {
                 src="/gojo_icon.jpg"
               />
               <Text fontSize={"sm"} fontWeight={"bold"}>
-                shreyanshxyz
+                user
               </Text>
             </Flex>
             <Flex gap={4} alignItems={"center"}>
