@@ -161,14 +161,14 @@ const Actions = ({ post }) => {
         <ShareSVG />
       </Flex>
 
-      <Flex>
+      <Flex gap={2} alignItems={"center"} alignContent={"center"}>
         <Box
           position={"relative"}
           w={"fit-content"}
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <AvatarGroup size="2px" max={2}>
+          <AvatarGroup size="2xs" max={2}>
             <Avatar
               size={"xs"}
               name="Shreyansh Alt"
