@@ -179,10 +179,7 @@ const Actions = ({ post }) => {
                 size="xs"
                 name="John doe"
                 src={post.replies[0].userProfilePic}
-                // position={"absolute"}
-                // top={"0px"}
-                // left="15px"
-                // padding={"2px"}
+                bottom={0}
               />
             )}
 
@@ -191,10 +188,7 @@ const Actions = ({ post }) => {
                 size="xs"
                 name="John doe"
                 src={post.replies[1].userProfilePic}
-                // position={"absolute"}
-                // bottom={"0px"}
-                // right="-5px"
-                // padding={"2px"}
+                bottom={0}
               />
             )}
 
@@ -203,10 +197,7 @@ const Actions = ({ post }) => {
                 size="xs"
                 name="John doe"
                 src={post.replies[2].userProfilePic}
-                // position={"absolute"}
-                // bottom={"0px"}
-                // left="4px"
-                // padding={"2px"}
+                bottom={0}
               />
             )}
           </AvatarGroup>
