@@ -18,7 +18,16 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={user ? <HomePage /> : <Navigate to="/auth" />}
+          element={
+            user ? (
+              <>
+                <HomePage />
+                <CreatePost />
+              </>
+            ) : (
+              <Navigate to="/auth" />
+            )
+          }
         />
         <Route
           path="/auth"

@@ -94,7 +94,8 @@ const CreatePost = () => {
         position={"fixed"}
         bottom={10}
         right={5}
-        bg={useColorModeValue("gray.300", "gray.dark")}
+        // bg={useColorModeValue("gray.300", "gray.dark")}
+        background={"black"}
         onClick={onOpen}
         size={{ base: "sm", sm: "md" }}
       >
