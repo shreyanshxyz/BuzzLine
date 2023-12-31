@@ -67,13 +67,29 @@ const UserHeader = ({ user }) => {
         </Box>
       </Flex>
 
-      <Text>{user.bio}</Text>
+      <Flex
+        gap={2}
+        alignItems={"center"}
+        w={"full"}
+        justifyContent={"space-between"}
+      >
+        <Text>{user.bio}</Text>
+        {currentUser?._id === user._id && (
+          <Link as={RouterLink} to="/update">
+            <Button
+              size={"sm"}
+              bg={"blue.700"}
+              _hover={{
+                color: "blue.700",
+                background: "white",
+              }}
+            >
+              Update Profile
+            </Button>
+          </Link>
+        )}
+      </Flex>
 
-      {currentUser?._id === user._id && (
-        <Link as={RouterLink} to="/update">
-          <Button size={"sm"}>Update Profile</Button>
-        </Link>
-      )}
       {currentUser?._id !== user._id && (
         <Button size={"sm"} onClick={handleFollowUnfollow} isLoading={updating}>
           {following ? "Unfollow" : "Follow"}
