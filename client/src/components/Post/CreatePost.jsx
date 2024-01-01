@@ -15,7 +15,6 @@ import {
   ModalOverlay,
   Text,
   Textarea,
-  useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
@@ -94,7 +93,6 @@ const CreatePost = () => {
         position={"fixed"}
         bottom={10}
         right={5}
-        // bg={useColorModeValue("gray.300", "gray.dark")}
         background={"black"}
         onClick={onOpen}
         size={{ base: "sm", sm: "md" }}
