@@ -111,6 +111,7 @@ export default function UpdateProfilePage() {
           <FormControl>
             <FormLabel>Full name</FormLabel>
             <Input
+              border={"2px solid gray"}
               placeholder="John Doe"
               value={inputs.name}
               onChange={(e) => setInputs({ ...inputs, name: e.target.value })}
@@ -121,6 +122,7 @@ export default function UpdateProfilePage() {
           <FormControl>
             <FormLabel>User name</FormLabel>
             <Input
+              border={"2px solid gray"}
               placeholder="johndoe"
               value={inputs.username}
               onChange={(e) =>
@@ -133,6 +135,9 @@ export default function UpdateProfilePage() {
           <FormControl>
             <FormLabel>Email address</FormLabel>
             <Input
+              _hover={{
+                border: "2px solid gray",
+              }}
               placeholder="your-email@example.com"
               value={inputs.email}
               onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
@@ -143,6 +148,9 @@ export default function UpdateProfilePage() {
           <FormControl>
             <FormLabel>Bio</FormLabel>
             <Input
+              _hover={{
+                border: "2px solid gray",
+              }}
               placeholder="Your bio."
               value={inputs.bio}
               onChange={(e) => setInputs({ ...inputs, bio: e.target.value })}
@@ -153,6 +161,9 @@ export default function UpdateProfilePage() {
           <FormControl>
             <FormLabel>Password</FormLabel>
             <Input
+              _hover={{
+                border: "2px solid gray",
+              }}
               placeholder="password"
               value={inputs.password}
               onChange={(e) =>
