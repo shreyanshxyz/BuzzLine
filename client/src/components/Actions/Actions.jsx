@@ -217,12 +217,18 @@ const Actions = ({ post }) => {
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent>
-          <ModalHeader></ModalHeader>
+        <ModalContent background={"white"}>
+          <ModalHeader>Comment</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
               <Input
+                border={"1px solid gray"}
+                _hover={{
+                  border: "1px solid gray",
+                }}
+                color={"black"}
+                textColor={"black"}
                 placeholder="Reply goes here.."
                 value={reply}
                 onChange={(e) => setReply(e.target.value)}
