@@ -58,8 +58,16 @@ export default function LoginCard() {
     <Flex align={"center"} justify={"center"}>
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
-          <Heading fontSize={"4xl"} textAlign={"center"}>
-            Login
+          <Heading
+            fontSize={"4xl"}
+            fontFamily={"inter"}
+            fontStyle={"italic"}
+            fontWeight={"bold"}
+            cursor={"pointer"}
+            w={48}
+            textAlign={"center"}
+          >
+            Buzzline
           </Heading>
         </Stack>
         <Box
