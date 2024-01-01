@@ -103,12 +103,18 @@ const CreatePost = () => {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
 
-        <ModalContent>
+        <ModalContent background={"white"}>
           <ModalHeader>Create Post</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
             <FormControl>
               <Textarea
+                border={"1px solid gray"}
+                _hover={{
+                  border: "1px solid gray",
+                }}
+                color={"black"}
+                textColor={"black"}
                 placeholder="Post content goes here.."
                 onChange={handleTextChange}
                 value={postText}
