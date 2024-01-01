@@ -111,7 +111,9 @@ export default function UpdateProfilePage() {
           <FormControl>
             <FormLabel>Full name</FormLabel>
             <Input
-              border={"2px solid gray"}
+              _hover={{
+                border: "2px solid gray",
+              }}
               placeholder="John Doe"
               value={inputs.name}
               onChange={(e) => setInputs({ ...inputs, name: e.target.value })}
