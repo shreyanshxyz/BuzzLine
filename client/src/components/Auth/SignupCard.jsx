@@ -77,6 +77,10 @@ export default function SignupCard() {
                 <FormControl isRequired>
                   <FormLabel>Full name</FormLabel>
                   <Input
+                    border={"1px solid black"}
+                    _hover={{
+                      border: "2px solid black",
+                    }}
                     type="text"
                     onChange={(e) =>
                       setInputs({ ...inputs, name: e.target.value })
@@ -89,6 +93,10 @@ export default function SignupCard() {
                 <FormControl isRequired>
                   <FormLabel>Username</FormLabel>
                   <Input
+                    border={"1px solid black"}
+                    _hover={{
+                      border: "2px solid black",
+                    }}
                     type="text"
                     onChange={(e) =>
                       setInputs({ ...inputs, username: e.target.value })
@@ -101,6 +109,10 @@ export default function SignupCard() {
             <FormControl isRequired>
               <FormLabel>Email address</FormLabel>
               <Input
+                border={"1px solid black"}
+                _hover={{
+                  border: "2px solid black",
+                }}
                 type="email"
                 onChange={(e) =>
                   setInputs({ ...inputs, email: e.target.value })
@@ -112,6 +124,10 @@ export default function SignupCard() {
               <FormLabel>Password</FormLabel>
               <InputGroup>
                 <Input
+                  border={"1px solid black"}
+                  _hover={{
+                    border: "2px solid black",
+                  }}
                   type={showPassword ? "text" : "password"}
                   onChange={(e) =>
                     setInputs({ ...inputs, password: e.target.value })
