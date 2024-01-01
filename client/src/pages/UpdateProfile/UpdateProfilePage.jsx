@@ -70,13 +70,18 @@ export default function UpdateProfilePage() {
           boxShadow={"lg"}
           p={6}
         >
-          <Heading lineHeight={1.1} fontSize={{ base: "2xl", sm: "3xl" }}>
-            User Profile Edit
+          <Heading
+            lineHeight={1.1}
+            alignSelf={"center"}
+            fontSize={{ base: "2xl", sm: "3xl" }}
+          >
+            Edit Profile
           </Heading>
           <FormControl id="userName">
             <Stack direction={["column", "row"]} spacing={6}>
               <Center>
                 <Avatar
+                  borderRadius={"2px"}
                   size="xl"
                   boxShadow={"md"}
                   src={imgUrl || user.profilePic}
