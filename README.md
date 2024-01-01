@@ -89,6 +89,11 @@ Buzzline is a social media app developed using Vite + React. Chakra UI is utiliz
 - Post
   ![post1.png](https://i.postimg.cc/j2pQbZ5x/post1.png)
   ![post2.png](https://i.postimg.cc/DZfxjjWR/post2.png)
+- User Profile
+  ![userProfile1.png](https://i.postimg.cc/7Zyd1NVr/user-Profile1.png)
+  ![userProfile1.png](https://i.postimg.cc/KvTCgWt5/user-Profile2.png)
+- Update Profile
+  ![update.png](https://i.postimg.cc/Jh5TQVhb/update-Profile.png)
 - Authentication
   ![signUp.png](https://i.postimg.cc/YSHngqtr/signUp.png)
   ![login.png](https://i.postimg.cc/y89pkS4p/login.png)
@@ -96,7 +101,3 @@ Buzzline is a social media app developed using Vite + React. Chakra UI is utiliz
   ![createpost.png](https://i.postimg.cc/NfZPskVr/create-Post-Modal.png)
 - Comment Modal
   ![comment.png](https://i.postimg.cc/L6JbFbyp/comment-Modal.png)
-- Update Profile
-  ![confetti.png](https://pasteimg.com/images/2023/12/28/confetti.png)
-- User Profile
-  ![confetti.png](https://pasteimg.com/images/2023/12/28/confetti.png)
