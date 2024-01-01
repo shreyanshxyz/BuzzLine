@@ -76,6 +76,10 @@ export default function LoginCard() {
             <FormControl isRequired>
               <FormLabel>Username</FormLabel>
               <Input
+                border={"1px solid black"}
+                _hover={{
+                  border: "2px solid black",
+                }}
                 type="text"
                 value={inputs.username}
                 onChange={(e) =>
@@ -90,6 +94,10 @@ export default function LoginCard() {
               <FormLabel>Password</FormLabel>
               <InputGroup>
                 <Input
+                  border={"1px solid black"}
+                  _hover={{
+                    border: "2px solid black",
+                  }}
                   type={showPassword ? "text" : "password"}
                   value={inputs.password}
                   onChange={(e) =>
@@ -101,6 +109,7 @@ export default function LoginCard() {
                 />
                 <InputRightElement h={"full"}>
                   <Button
+                    color={"black"}
                     variant={"ghost"}
                     onClick={() =>
                       setShowPassword((showPassword) => !showPassword)
