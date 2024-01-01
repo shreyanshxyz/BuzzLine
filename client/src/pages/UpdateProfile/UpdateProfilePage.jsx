@@ -112,7 +112,7 @@ export default function UpdateProfilePage() {
             <FormLabel>Full name</FormLabel>
             <Input
               _hover={{
-                border: "2px solid gray",
+                border: "2px solid blue.300",
               }}
               placeholder="John Doe"
               value={inputs.name}
@@ -125,7 +125,7 @@ export default function UpdateProfilePage() {
             <FormLabel>User name</FormLabel>
             <Input
               _hover={{
-                border: "2px solid gray",
+                border: "2px solid blue.300",
               }}
               placeholder="johndoe"
               value={inputs.username}
@@ -140,7 +140,7 @@ export default function UpdateProfilePage() {
             <FormLabel>Email address</FormLabel>
             <Input
               _hover={{
-                border: "2px solid gray",
+                border: "2px solid blue.300",
               }}
               placeholder="your-email@example.com"
               value={inputs.email}
@@ -153,7 +153,7 @@ export default function UpdateProfilePage() {
             <FormLabel>Bio</FormLabel>
             <Input
               _hover={{
-                border: "2px solid gray",
+                border: "2px solid blue.300",
               }}
               placeholder="Your bio."
               value={inputs.bio}
@@ -166,7 +166,7 @@ export default function UpdateProfilePage() {
             <FormLabel>Password</FormLabel>
             <Input
               _hover={{
-                border: "2px solid gray",
+                border: "2px solid blue.300",
               }}
               placeholder="password"
               value={inputs.password}
@@ -179,21 +179,21 @@ export default function UpdateProfilePage() {
           </FormControl>
           <Stack spacing={6} direction={["column", "row"]}>
             <Button
-              bg={"red.400"}
+              bg={"red.600"}
               color={"white"}
               w="full"
               _hover={{
-                bg: "red.500",
+                bg: "red.800",
               }}
             >
               Cancel
             </Button>
             <Button
-              bg={"green.400"}
+              bg={"green.600"}
               color={"white"}
               w="full"
               _hover={{
-                bg: "green.500",
+                bg: "green.800",
               }}
               type="submit"
               isLoading={updating}
