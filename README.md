@@ -101,3 +101,18 @@ Buzzline is a social media app developed using Vite + React. Chakra UI is utiliz
   ![comment.png](https://i.postimg.cc/L6JbFbyp/comment-Modal.png)
 - Create Post Modal <br>
   ![createpost.png](https://i.postimg.cc/NfZPskVr/create-Post-Modal.png)
+
+## Environment Variables (.env)
+
+Create a `.env.local` file in the root of your project and add the following variables:
+
+#### Server
+
+```env
+PORT=
+MONGODB_URI=
+JWT_SECRET=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+```
