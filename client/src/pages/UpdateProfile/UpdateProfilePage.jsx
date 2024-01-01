@@ -85,9 +85,10 @@ export default function UpdateProfilePage() {
               <Center w="full">
                 <Button
                   w="full"
-                  background={"blue"}
+                  bg={"blue.700"}
                   _hover={{
-                    background: "blue",
+                    color: "blue.700",
+                    background: "white",
                   }}
                   onClick={() => fileRef.current.click()}
                 >
